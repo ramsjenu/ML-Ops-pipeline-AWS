@@ -1,0 +1,71 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifydpdemo-vrams-2794d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::631204218401:role/amplify-amplifydpdemo-vrams-2794d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::631204218401:role/amplify-amplifydpdemo-vrams-2794d-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-amplifydpdemo-vrams-2794d-deployment",
+      "UnauthRoleName": "amplify-amplifydpdemo-vrams-2794d-unauthRole",
+      "StackName": "amplify-amplifydpdemo-vrams-2794d",
+      "StackId": "arn:aws:cloudformation:eu-west-2:631204218401:stack/amplify-amplifydpdemo-vrams-2794d/a44c2780-6d45-11ef-bae2-021fc99a75b3",
+      "AmplifyAppId": "dv718o1533ktm"
+    }
+  },
+  "auth": {
+    "amplifydpdemofcb2e10f": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "eu-west-2_lsT9HLvmH",
+        "AppClientIDWeb": "bue0kt6pv3klb33qo2g18df1p",
+        "AppClientID": "1ivo90r3a71l52dbi48uu9k954",
+        "IdentityPoolId": "eu-west-2:845879a7-dd49-494e-8f71-c14f2a022123",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-2:631204218401:userpool/eu-west-2_lsT9HLvmH",
+        "IdentityPoolName": "amplifydpdemofcb2e10f_identitypool_fcb2e10f__vrams",
+        "UserPoolName": "amplifydpdemofcb2e10f_userpool_fcb2e10f"
+      },
+      "lastPushTimeStamp": "2024-09-07T18:47:51.344Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifydpdemo-vrams-2794d-deployment/amplify-cfn-templates/auth/amplifydpdemofcb2e10f-cloudformation-template.json",
+        "logicalId": "authamplifydpdemofcb2e10f"
+      }
+    }
+  },
+  "storage": {
+    "amplifystorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "output": {
+        "BucketName": "amplify-storage2794d-vrams",
+        "Region": "eu-west-2"
+      },
+      "lastPushTimeStamp": "2024-09-07T18:47:51.719Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifydpdemo-vrams-2794d-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageamplifystorage"
+      }
+    }
+  }
+}
